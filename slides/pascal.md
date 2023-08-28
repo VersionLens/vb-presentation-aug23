@@ -81,3 +81,28 @@ Every token (partial word) known to the model is represented by a number <!-- .e
 
 
 ### We're just getting started - today's LLMs are very unoptimized, but GPT-4 can already pass the bar exam.
+
+
+
+## Part 2 - How to deploy LLMs
+
+
+As with any service, there are two options:
+1. Use an API, e.g. OpenAI, Google Vertex, Anthropic
+2. Run LLMs privately on your own infrastructure, e.g. Llama, MPT, etc
+
+
+## IMPORTANT
+Don't expect too much from an LLM, like with a single prompt saying "make me a millionaire".
+
+All LLMs are far more useful when you ask them to do very specific tasks - we don't have an Artificial **General** Intelligence yet, so we have to surround LLM completions with our own logic.
+
+
+That means we have to **orchestrate** calls to LLMs, by providing context to prompts, running loops, filtering output, etc - typical workflow stuff.
+
+Pipelines aren't going anywhere.
+
+
+LangChain is a good library for fast prototyping of LLM pipelines, in Python and JavaScript.
+
+Be wary of LangChain in production - it can be hard to adjust for every use case. Treat it like jQuery - with care.
