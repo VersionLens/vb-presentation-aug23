@@ -9,7 +9,8 @@
 
 ## Part 1 - What is an LLM?
 
-An AI model that can predict the next word in a sentence:
+
+A LLM is an AI model that can predict the next word in a sentence:
 
 * "She went to the" → "She went to the *cinema*"
 
