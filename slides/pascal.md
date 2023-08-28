@@ -15,9 +15,22 @@ A LLM is an AI model that can predict the next word in a sentence:
 * "She went to the" → "She went to the *cinema*"
 
 
+We can use this to complete useful sentences, like instructions:
+
+```markdown
+### Instruction
+Tell me about the French Revolution
+```
+→
+```markdown
+### Response
+The French Revolution (1789-1799) was a period of radical social and political upheaval in France 
+```
+
+
 So it's like autocomplete on steroids?
 
-Right... if autocomplete had a brain. <!-- .element: class="fragment" -->
+Right! It's autocomplete, but with a brain attached. <!-- .element: class="fragment" -->
 
 
 ### The difference between autocomplete and a LLM is a few billion numbers.
@@ -28,21 +41,21 @@ To understand what these few billion numbers are, we need to understand how to b
 
 A slice of an artificial brain
 
-![Brain nodes](/images/neural-net-1.png "Artificial brain nodes") <!-- .element: style="max-height: 400px" -->
+![Brain nodes](images/neural-net-1.png "Artificial brain nodes") <!-- .element: style="max-height: 400px" -->
 
 Given the preceding words, the model predicts "cinema" as the most likely completion.
 
 
 How is the most likely completion calculated?
 
-![Brain edges](/images/neural-net-2.png "Artificial brain edges") <!-- .element: style="max-height: 400px" -->
+![Brain edges](images/neural-net-2.png "Artificial brain edges") <!-- .element: style="max-height: 400px" -->
 
 Very roughly, by adding and multiplying the numbers on the edges - the arrows connecting nodes.
 
 
 In fact, we don't actually know what the nodes represent, like how we can't really say what a single neuron in a human brain represents.
 
-![Brain no nodes](/images/neural-net-3.png "Artificial brain no nodes") <!-- .element: style="max-height: 400px" -->
+![Brain no nodes](images/neural-net-3.png "Artificial brain no nodes") <!-- .element: style="max-height: 400px" -->
 
 
 The beauty is, we don't need to understand the nodes. 
