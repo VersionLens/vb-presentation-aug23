@@ -98,11 +98,49 @@ Don't expect too much from an LLM, like with a single prompt saying "make me a m
 All LLMs are far more useful when you ask them to do very specific tasks - we don't have an Artificial **General** Intelligence yet, so we have to surround LLM completions with our own logic.
 
 
-That means we have to **orchestrate** calls to LLMs, by providing context to prompts, running loops, filtering output, etc - typical workflow stuff.
+That means we have to **orchestrate** calls to LLMs, by providing context to prompts, feeding some prompt output back as input, filtering output, etc - typical workflow stuff.
 
 Pipelines aren't going anywhere.
 
 
 LangChain is a good library for fast prototyping of LLM pipelines, in Python and JavaScript.
 
-Be wary of LangChain in production - it can be hard to adjust for every use case. Treat it like jQuery - with care.
+Be wary of LangChain in production - it can be hard to adjust for every use case. Use it to figure out what works, then implement some of those things yourself.
+
+
+How about running LLMs on your own infrastructure, without depending on a third-party API?
+* Either you need some hefty GPUs - e.g. AWS instances with 24GB VRAM, to multiply weights fast.
+* Or use llama.cpp, which runs LLM inference adequately fast on CPU + RAM, with GPU acceleration if available.
+
+
+
+## Part 3 - What we're doing with LLMs
+
+
+### We're automating ourselves, by building a fully-automated AI senior developer.
+
+
+But didn't you say that LLMs are only good at specific tasks, not general tasks like being a developer?
+
+
+Right! To be a good senior developer, you have to:
+* Understand the underlying business
+* Understand the codebase
+* Capture requirements, by talking to stakeholders
+* Be able to plan and execute complex changes
+* React to changing requirements
+* Take in feedback from the running system, as you make changes, and update your plans
+* Be able to validate your changes
+* Learn from your mistakes, and your successes
+
+
+We are building LLM pipelines - AI Architecture - that can do all of these things.
+
+But we have to start small, and build up from there.
+
+
+* We will soon start solving small development tasks for you, to train our AI systems on real world problems.
+* We will also soon launch a service for you that takes ideas, feedback and bugs from anyone in your company, and delivers high-quality tickets in Trello.
+
+
+Looking forward to building the future of product development with you! <!-- .element: style="font-size: 60px" -->
